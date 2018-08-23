@@ -11,7 +11,7 @@ Object.defineProperty(Weather.prototype, 'temperature', {
     return this._temperature;
   },
   set: function (value) {
-    this._temperature = (value - 273.15).toFixed(2) + 'C.';
+    this._temperature = value.toFixed(2) + 'C.';
   }
 });
 
